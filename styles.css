@@ -2,19 +2,32 @@
    hyphens: auto;
    font-family: Arial, Helvetica, sans-serif;
    box-sizing: border-box;
-   border: black solid 2px;
 }
 body{
    font-size: 1.25rem;
-   
    margin: auto;
 }
 #header{
-   background-image: url('img/forest-view.jpg') no-repeat center center/cover;
-  
+   background: url('https://www.goodfreephotos.com/albums/united-states/minnesota/superior-national-forest/minnesota-superior-national-forest-mountain-view.jpg') no-repeat center center/cover;
+   margin-bottom: 2rem;
+   height: 30vmax;
+   padding: 5rem 2rem;
 }
-header h1{
+#header h1{
    text-align: center;
    font-size: 4rem;
-   color: blue;
+   color: #ebebeb;
+   align-self: center;
+}
+
+
+.blogs-container{
+   border: red solid 4px;
+   padding: 1rem;
+   margin-bottom: 1rem ;
+}
+.blog {
+   padding: 1rem 0;
+   display: flex;
+   border: green 2px solid;
 }
