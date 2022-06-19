@@ -1,4 +1,4 @@
-/***************************** GENERAL STYLING ****************************************************/
+/***************************** GENERAL STYLING ELEMENTS/TAGS ****************************************************/
 * {
   box-sizing: border-box;
 }
@@ -31,7 +31,6 @@ body {
 .flip-box .flip-box-content.flipped {
   transform: rotateY(180deg) scale(1.25);
 }
-
 
 .flip-front,
 .flip-back {

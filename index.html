@@ -5,14 +5,15 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Document</title>
-   <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
    <header id="header"> 
       <h1>Animals</h1>
    </header>
-   <main>
-      <article class="flip-box">
+   <main class="main-container">
+      <article class="flip-box post-container">
          <div class="flip-box-content" onclick="flip(this)">
             <div class="flip-front">
             <!--<a href="https://myanimals.com/animals/wild-animals-animals/habitat-of-a-crocodile-characteristics-and-behavior/" target="_blank" >-->  <img src="https://res.cloudinary.com/aamong/image/upload/v1522783565/crocodile_iwr4kp.jpg" alt="Crocodile"  ><!--</a>-->
@@ -24,9 +25,19 @@
             </div>
          </div>
       </article>
-   
-    
-      
+      <article class="flip-box post-container">
+         <div class="flip-box-content" onclick="flip(this)">
+            <div class="flip-front">
+            <!--<a href="https://myanimals.com/animals/wild-animals-animals/habitat-of-a-crocodile-characteristics-and-behavior/" target="_blank" >-->  <img src="https://res.cloudinary.com/aamong/image/upload/v1522783565/crocodile_iwr4kp.jpg" alt="Crocodile"  ><!--</a>-->
+            </div>
+            <div class="flip-back">
+            <h2 > Crocodiles</h2>
+               <p > Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque temporibus cum alias voluptas tenetur, numquam dolorum aut amet, quibusdam esse pariatur nostrum similique optio adipisci architecto laboriosam accusamus exercitationem iure.</p> 
+               <a href="https://www.google.com/" target="_blank">Link</a>               
+            </div>
+         </div>
+      </article>
+
    </main>
 <script src="scripts.js"></script>
 </body>
