@@ -18,12 +18,14 @@ body {
   perspective: 1000px;
   background-color: aliceblue;
   position: relative;
+  
 }
 .flip-box-content {
   position: relative;
   text-align: center;
   transition: transform 750ms ease-in;
   transform-style: preserve-3d;
+  
 }
 
 .flip-box .flip-box-content.flipped {

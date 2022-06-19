@@ -1,9 +1,8 @@
-function flip(){
-   const flipContent=document.querySelector('.flip-box-content')
-   const flipped = flipContent.classList.contains("flipped")
+function flip(element){
+   const flipped = element.classList.contains("flipped")
   if(flipped){
-    flipContent.classList.remove('flipped')
+    element.classList.remove('flipped')
   }else{
-    flipContent.classList.toggle('flipped')
+    element.classList.toggle('flipped')
   }
 }
