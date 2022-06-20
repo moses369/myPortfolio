@@ -5,53 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    
+
     <link rel="stylesheet" href="css/styles.css" />
   </head>
   <body>
-    <header id="header">
-      <h1>Animals</h1>
-    </header>
-    <main class="image-gallery">
-      <section class="image-gallery1 box-shadow">
-        <article class="flip-box">
-          <div class="flip-box-content" onclick="flip(this)">
-            <div class="flip-front">
-              <img
-                src="img/grizzly.jpg"
-                alt="Crocodile"  >
-            </div>
-            <div class="flip-back">
-              <h2>Crocodiles</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                temporibus cum alias voluptas tenetur
-              </p>
-              <a href="https://www.google.com/" target="_blank">Link</a>
-            </div>
-          </div>
-        </article>
-      </section>
-      <section class="image-gallery2">
-        <article class="flip-box">
-          <div class="flip-box-content" onclick="flip(this)">
-            <div class="flip-front">
-              <img
-                src="img/web.png"
-                alt="Crocodile"  >
-            </div>
-            <div class="flip-back">
-              <h2>Crocodiles</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque
-                temporibus cum alias voluptas tenetur
-              </p>
-              <a href="https://www.google.com/" target="_blank">Link</a>
-            </div>
-          </div>
-        </article>
-      </section>
-    </main>
+    <div class="outer-wrapper">
+      <div class="wrapper">
+        <div class="slide intro">
+          <section class="myName">
+            <h1>MosesV</h1>
+          </section>
+        </div>  
+        <div class="slide projects">
+          <section class="project-grid">
+          <header class="project-header">
+            <h2>Projects</h2>
+          </header>
+            <section class="project1 box-shadow">
+              <article class="flip-box">
+                <div class="flip-box-content" onclick="flip(this)">
+                  <div class="flip-front">
+                    <img src="img/grizzly.jpg" alt="Crocodile" />
+                  </div>
+                  <div class="flip-back">
+                    <h2>Crocodiles</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cumque temporibus cum alias voluptas tenetur
+                    </p>
+                    <a href="https://www.google.com/" target="_blank">Link</a>
+                  </div>
+                </div>
+              </article>
+            </section>
+            <section class="project2">
+              <article class="flip-box">
+                <div class="flip-box-content" onclick="flip(this)">
+                  <div class="flip-front">
+                    <img src="img/web.png" alt="Crocodile" />
+                  </div>
+                  <div class="flip-back">
+                    <h2>Crocodiles</h2>
+                    <p>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                      Cumque temporibus cum alias voluptas tenetur
+                    </p>
+                    <a href="https://www.google.com/" target="_blank">Link</a>
+                  </div>
+                </div>
+              </article>
+            </section>
+          </section>
+        </div>
+        <div class="slide three"></div>
+      </div>
+    </div>
     <script src="scripts.js"></script>
   </body>
 </html>
+
+<!--  -->
