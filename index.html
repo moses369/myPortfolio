@@ -10,14 +10,17 @@
   </head>
   <body>
     <div class="outer-wrapper">
+      <nav class="navbar "> 
+        <a href="#intro">Intro</a>
+        <a href="#work">Work</a>
+        <a href="#three">Not Sure Yet</a>
+    </nav>
       <div class="wrapper">
-        <div class="slide intro">
-          <section class="myName">
-            <h1>MosesV</h1>
-          </section>
+        
+        <div class="slide grid " id="intro">
+          
         </div>  
-        <div class="slide projects">
-          <section class="project-grid">
+        <div class="slide grid " id="work" >
           <header class="project-header">
             <h2>Projects</h2>
           </header>
@@ -27,37 +30,18 @@
                   <div class="flip-front">
                     <img src="css/img/grizzly.jpg" alt="Crocodile" />
                   </div>
-                  <div class="flip-back">
-                    <h2>Crocodiles</h2>
+                  <div class="flip-back card-info">
+                    <h3>Project Here</h3>
                     <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cumque temporibus cum alias voluptas tenetur
+                      Description : Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit tenetur quasi corporis tempora velit ipsum nemo. Quos omnis necessitatibus sed?
                     </p>
-                    <a href="https://www.google.com/" target="_blank">Link</a>
+                    <a href="https://www.google.com/" target="_blank">Go to Project</a>
                   </div>
                 </div>
               </article>
-            </section>
-            <section class="project2">
-              <article class="flip-box">
-                <div class="flip-box-content" onclick="flip(this)">
-                  <div class="flip-front">
-                    <img src="css/img/web.png" alt="Crocodile" />
-                  </div>
-                  <div class="flip-back">
-                    <h2>Crocodiles</h2>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Cumque temporibus cum alias voluptas tenetur
-                    </p>
-                    <a href="https://www.google.com/" target="_blank">Link</a>
-                  </div>
-                </div>
-              </article>
-            </section>
-          </section>
         </div>
-        <div class="slide three"></div>
+        <div class="slide three " id="three"></div>
+      
       </div>
     </div>
     <script src="js/scripts.js"></script>
