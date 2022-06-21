@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/normalize.css">
+   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+   <link rel="stylesheet" href="css/style.css">
+   <title>Good Point Deli</title>
+</head>
+<body>
+   <div class="body-wrap">
+      <!-- Header and NavBar -->
+      <div class="header-wrap">
+         <header >
+            <h1><a href="#">Good Point Deli</a></h1>
+            <div class="navbar" >
+               <nav id="main-nav" class="overlay">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+                  <div id="main-navContent" class="overlay-content">
+                     <ul onclick="closeNav()" >
+                        <li><a href="#contact"><i class="material-icons">phone</i></a></li>
+                        <li><a href="#"><i class="material-icons">shopping_cart</i></a></li>
+                        <div class="dropdown">
+                           <button><i class="material-icons" onclick="closeLiForm(), closeSuForm()">account_circle</i></button>
+                           <div class="dropdown-content">
+                              <div class="flex-column">
+                                 <a href="javascript:void(0)" onclick="openLiForm() , closeSuForm()" >Sign In</a>
+                                 <a href="javascript:void(0)" onclick="closeLiForm(), openSuForm()" >Sign Up</a>
+                              </div>
+                           </div>
+                        </div>
+                     </ul>
+                     <form class="searchBar" action="#">
+                        <input id="s-input" type="text" placeholder="Search Products" name="search">
+                        <button id="s-icon"type="submit"><i class="material-icons" >search</i></button>
+                     </form>
+                     
+
+                     <div class="clear"></div>
+                  </div>
+                  <form class="popup-LiForm">  
+                     <div class="form-wrap">                               
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw">Password</label>
+                        <input type="password" name="psw" id="phone" placeholder="Enter Password" required>
+
+                        <label>
+                           <input type="checkbox" id="rem" name="remember"> 
+                           Remember Me
+                        </label>
+
+                        <span class="psw"> <a href="#">Forgot password?</a></span>
+                        <div class="flex-row">
+                           <button type="submit"  class="btn" >Login</button>
+                           <button type="button" class='close' class="cancel" onclick="closeLiForm()">Cancel</button>
+                        </div>
+                     </div>  
+                  </form>
+                  <form class="popup-SuForm">  
+                     <div class="form-wrap">                               
+                        <label for="email">Email</label>
+                        <input type="text" placeholder="Enter Email" name="email" required>
+
+                        <label for="psw">Password</label>
+                        <input type="password" name="psw" id="phone" placeholder="Enter Password" required>
+
+                        <label for="psw-repeat">Repeat Password</label>
+                        <input type="password" placeholder="Repeat Password" name="psw-repeat"></input>
+
+                        <label>
+                           <input type="checkbox" id="rem" name="remember"> 
+                           Remember Me
+                        </label>
+
+                        <p>By creating an account you have agreed to our <a href="#">Terms &amp; Privacy</a></p>
+                        <div class="flex-row">
+                           <button type="submit" value="Submit" class="btn" >Submit</button>
+                           <button type="button" class='close' class="cancel" onclick="closeSuForm()">Cancel</button>
+                        </div>
+                     </div>  
+                  </form>
+               </nav>
+            </div>
+            <div id="nav-btn" onclick="openNav()">
+               <span></span>
+               <span></span>
+               <span ></span>
+            </div>
+         </header>
+         <div id="top" class="fill-top"></div>
+         <div class="clear"></div>
+         <section class="intro">
+            <div class="intro-content">
+            <h2>Delivering to Your Home</h2>
+            <p>Ask us to track down a local product!</p>
+            <a class="btn" href="shop.html">Shop Now</a> 
+            </div> 
+         </section> 
+      </div>
+      <!-- Main Content -->
+      <div class="main-wrap" > 
+         <main>    
+            <section class="description">
+               <div class="content">
+                  <div id="about">
+                     <h2>About Us</h2> 
+                     <p>We are your favorite local Jersey City corner store, looking to make life more convenient for our community. By providing online services and delivery straight to your home!</p>
+                  </div>
+                  <div id="service">
+                     <h2>Services</h2>
+                     <p>We have a wide range of products from school supplies, toys, household items, pet food, auto supplies, groceries, & most importantly an in-house kitchen to provide you with tasty food! </p>
+                  </div>
+               </div>
+            </section>  
+            <section id="contact">
+               <div class="content">
+                  <h2>Contact Us</h2>
+                     <img src="css/images/contact.jpg" alt="Someone ordering food" >
+                     <ul>
+                        <li><h3>Phone</h3> <p>201-622-8047</p></li>
+                        <li>
+                           <h3>Address</h3>
+                           <Address> 662 Bergen Ave Jersey City, NJ 07302</Address>
+                        </li>
+                        <li>
+                           <h3>Hours</h3>
+                           <p><strong>Monday- Saturday: </strong> 8am - 9pm</p>
+                           <p><strong>Sunday:</strong> 8am - 5pm</p>
+                        </li>
+                        <button href= "javascript:void(0)" id="vmsg-btn"onclick="openMesg()" class="btn">Send Message</button>
+                     </ul>
+                     
+                     <form class="popup-Mesg">  
+                        <span  onclick="closeMesg()" class="cancel" id="close_formX">&times;</span>
+                        <div class="form-wrap">     
+                           <label for="name">Name*</label>
+                           <input type="text" name="name" id="name" placeholder="Enter Name" required>
+                           
+                           <label for="email">Email*</label>
+                           <input type="text" placeholder="Enter Email" name="email" required>
+
+                           <label for="phone">Phone Number*</label>
+                           <input type="tel" name="phone" id="phone" placeholder="Enter Phone Number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+
+                           <label for="message">Message</label>
+                           <textarea name="message" id="message" cols="25" rows="4" placeholder="What can we help you with?"></textarea>
+                           <div class="flex-row">
+                              <button type="submit" value="Send Message" class="btn" class="submit-f">Send Message</button>
+                              <button type="button" class='close' class="cancel"  onclick="closeMesg()">Close</button>
+                           </div>
+                        </div>  
+                     </form>
+
+               </div>
+            </section>
+         </main>
+      </div>
+      <!-- Footer -->
+      <footer class="main-footer">
+         <h3>Good Point Deli</h3>
+         <p>Copyright&copy;2021 Good Point Deli  - All Rights Reserved.</p>
+      </footer>
+   </div>   
+   <script src="script/script.js"></script>
+</body>
+</html>

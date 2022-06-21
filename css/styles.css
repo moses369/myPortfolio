@@ -19,6 +19,9 @@ body,a {
 h1,h2,h3{
   letter-spacing: 2px;
 }
+li{
+  list-style: none;
+}
 a {
   text-decoration: none;
   cursor: pointer;
@@ -91,6 +94,28 @@ a:hover{
   grid-template-rows: repeat(8, 5vw);
   grid-gap: 0.5rem;
 }
+/*****************************GRID INTR LAYOUTS ****************************************************/
+.intro-header{
+  grid-column-start: 1;
+  grid-column-end: 7;
+  grid-row-start: 3;
+  grid-row-end: 5;
+  padding-left: 1rem;
+}
+.intro-header h1{
+  font-size: 6rem;
+}
+.intro-header p{
+  font-size: 3rem;
+  padding-left: 3rem;
+}
+
+#sliding-right{
+  grid-column-start: 7;
+  grid-column-end: 12;
+  grid-row-start: 3;
+  grid-row-end: 7;
+}
 /*****************************GRID PROJECT LAYOUTS ****************************************************/
 .project-header {
   grid-column-start: 5;
@@ -100,7 +125,7 @@ a:hover{
 }
 .project-header h2 {
   text-align: center;
-  font-size: 5rem;
+  font-size: 3rem;
   padding-top: 1.2rem;
 }
 .project1 {
